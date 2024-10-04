@@ -12,6 +12,21 @@
 </head>
 <body>
 
+    <!-- Inicio Offcanva -->
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Redes sociales</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter</p>
+        <button class="btn btn-secondary" type="button">A Button</button>
+      </div>
+    </div>
+    <!-- Fin Offcanva -->
+
     <!-- Inicio del navbar -->
     <nav class="navbar navbar-expand-lg bg-danger">
       <div class="container-fluid">
@@ -107,6 +122,12 @@
 
     <div class="container">
         <button type="button" class="btn btn-danger">Eliminar</button>
+        <br>
+        <button type="button" class="btn btn-success">Ver Offcanvas</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          Ver offcanvas
+        </button>
+        
         <h2>Container</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quae laborum error, consequuntur esse nihil animi temporibus dignissimos numquam dicta. Ipsum ex in quas mollitia sed error voluptate vel tenetur.
@@ -114,6 +135,19 @@
     </div>
 
     <div class="container-fluid">
+      <!-- Inicio card -->
+      <div class="container mt-3">
+        <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p>
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="img/Belleza.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Nicolas Bohorquez Medina</h4>
+            <p class="card-text">Ingeniero de sistemas</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Ver perfil</a>
+          </div>
+        </div>
+      <!-- Fin card -->
         <button type="button" class="btn btn-primary">Agregar</button>
         <h2>Container fluid</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat magni impedit porro ducimus eum dignissimos dolore nemo corrupti. Alias corrupti asperiores ut qui quia totam velit reiciendis est soluta minima?</p>
@@ -164,6 +198,48 @@
                 </div>
               </div>
                 <!-- Fin ventana modal 1-->
+
+              <!-- Inicio ventana modal 2 -->
+              <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Open modal 2
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" style="color: #000000;">Informacion adicional</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="color: #000000;">
+                      
+                      Personal: <br>
+                      Egresado de la universidad UPC-Aguachica<br>
+                      Edad: 19 años <br>
+                      Experiencia: 0 <br>
+                      Estado: activo <br><br>
+
+                      Titulos academicos: <br>
+                      -Especializacion en seguridad informatica<br>
+                      -Maestria en analisis de datos <br>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+               <!-- Fin ventana modal 2 -->
             <br><br><br><br>
               </div>
             <div class="col-sm-6">
