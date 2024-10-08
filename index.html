@@ -148,6 +148,129 @@
           </div>
         </div>
       <!-- Fin card -->
+
+      <!-- Inicio de Collapse -->
+      <div class="container mt-3">
+        <h2>Accordion Example</h2>
+        <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+        <div id="accordion">
+          <div class="card" style="background-color: bisque;">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                Primero
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card" style="background-color: burlywood;">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Segundo
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          <div class="card" style="background-color: yellowgreen;">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                Tercero
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="background-color: tomato;">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseForce">
+                Cuarto
+              </a>
+            </div>
+            <div id="collapseForce" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <img src="img/Belleza.jpg" alt="Error" width="40%">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="background-color: blueviolet;">
+            <div class="card-header">
+              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                Quinto
+              </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body" style="background-color: antiquewhite;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin de collapse -->
+      <br><br>
+      <!-- Inicio de Scrollspy -->
+      <div class="scrollspy">
+        
+      </style>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Sección 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Sección 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Sección 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+      <h1>Sección 1</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <iframe width="100%" height="200px" src="https://www.youtube.com/embed/o3qo9idFYPc" title="워해머,Warhammer40k Siege - SODAZ Reupload" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    
+    
+    <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+      <h1>Sección 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <img src="img/robot.jpg" alt="error" width="50%">
+    </div>
+    
+    <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+      <h1>Sección 3</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <img src="img/dawn of war.gif" alt="error" width="100%">
+    </div>
+    
+    </body>
+      </div>
+      <!-- Fin de Scrollspy -->
+        <br><br>
         <button type="button" class="btn btn-primary">Agregar</button>
         <h2>Container fluid</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat magni impedit porro ducimus eum dignissimos dolore nemo corrupti. Alias corrupti asperiores ut qui quia totam velit reiciendis est soluta minima?</p>
